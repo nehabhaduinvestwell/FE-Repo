@@ -1,0 +1,41 @@
+.TableContainer {
+  text-align: center;
+  margin-top: 0px;
+
+  .policyHeading {
+    margin-top: 15px;
+  }
+  .policyDocsTable {
+    border-collapse: collapse;
+    margin: auto; 
+    height: 40vh;
+    width: 45vw;
+
+    .tableHeading, .tableData {
+      border: 2px solid black;
+      padding: 8px;
+      text-align: center;
+    }
+  }
+}
+
+
+
+
+// .policyTableContainer {
+//     text-align: center;
+  
+//     .policyTable {
+//       border-collapse: collapse;
+//       margin: auto; 
+//       margin-top: 200px;
+//       height: 500px;
+//       width: 500px;
+  
+//       .tableHeading, .col{
+//         border: 2px solid black;
+//         padding: 8px;
+//         text-align: left;
+//       }
+//     }
+// }
