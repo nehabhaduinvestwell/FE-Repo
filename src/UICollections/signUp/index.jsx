@@ -26,7 +26,7 @@ function SignUp() {
       event.preventDefault();
       const data= {name, email, password};
       console.log(data);
-      const response= await axios.post('http://localhost:8001/signup',data);
+      const response= await axios.post('http://localhost:8001/api/signup',data);
       console.log(response);
 
       if(response.data.success) {

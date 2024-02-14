@@ -1,0 +1,128 @@
+*{
+  margin: 0px;
+  padding: 0px;
+}
+
+.image {
+    position: absolute;
+    height: 8vh;
+    display: inline;
+    margin-top: 0px;
+    // top: 20px;
+    // left: 20px;
+    // cursor: pointer;
+    // height: 10px;
+}
+  
+  
+.navContainer {
+    position: absolute;
+    top: 50px;
+    left: 0px;
+    margin-top: 1vh;
+    background-color: black;
+    height: 100%;
+    padding: 10px;
+    
+  
+    .navList {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+      color: white;
+
+      .navItem {
+        padding: 8px ;
+        cursor: pointer;
+
+        &:hover {
+          background-color: grey;
+        }
+      }
+    }
+
+    @keyframes slideIn {
+      from {
+        transform: translateX(-100%);
+      }
+      to {
+        transform: translateX(0);
+      }
+    }
+    animation: slideIn 0.5s ease-in-out;
+}
+  
+
+// .image{
+
+//     .listIcon{
+    
+//         height: 50px;
+//     }
+// }
+
+// .navContainer{
+//     position: absolute;
+    
+   
+//     .navList{
+    
+//         background: black;
+//         width: fit-content;
+//         height: 100%;
+//         line-height: 7vh;
+//         text-align: center;
+//         width: 12vw;
+//         min-width: fit-content;
+        
+//         // .topNavContent{
+//         //     font-weight: bold;
+//         //     color: white;
+//         //     border-bottom: 1px solid gray;
+//         //     padding: 18px;
+//         //     border-right: 1px solid gray;
+//         //     letter-spacing: 2px;
+//         //     .navLink{
+//         //         color: white;
+//         //         text-decoration: none;
+//         //         &:hover{
+//         //             color: #6ca5d3;
+//         //         }
+//         //         }
+            
+//         // }
+    
+//         .navItem{
+            
+//             font-weight: bold;
+//             color: white;
+//             border-bottom: 1px solid gray;
+//             border-right: 1px solid gray;
+//             letter-spacing: 2px;
+//             // .navLink{
+//             //     color: white;
+//             //     text-decoration: none;
+//             //     &:hover{
+//             //         color: #6ca5d3;
+//             //     }
+//             // }
+            
+                
+//         }
+//         @keyframes slideIn {
+//             from {
+//               transform: translateX(-100%);
+//             }
+//             to {
+//               transform: translateX(0);
+//             }
+//         }
+//         animation: slideIn 0.5s ease-in-out; 
+//         // .navbar.show{
+//         //     display: block;
+//         // }
+//         // animation-name: navmotion;
+//         // animation-duration: 1s;
+    
+//     }
+// }

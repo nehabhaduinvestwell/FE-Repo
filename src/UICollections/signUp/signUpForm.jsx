@@ -1,5 +1,5 @@
 import {Link} from 'react-router-dom'
-import '/home/nehabhadu/LoginPage/frontend/src/media/css/signUp.css'
+import './../../media/css/signUp.css'
 
 function SignUpForm({inputName,inputEmail, inputPassword, handleSubmit}) {
 
@@ -21,9 +21,9 @@ function SignUpForm({inputName,inputEmail, inputPassword, handleSubmit}) {
                     <input type="password" className='userInput' placeholder='Enter Password' name= "password" onChange={inputPassword}/>
                 </div>
                 <button className='signUpButton'>Sign Up</button>
-                <span className='existingUser'>Already have an account?</span>
-                <Link className='loginLink' to="/">Log-In</Link>
             </form>
+            <span className='existingUser'>Already have an account?</span>
+            <Link className='loginLink' to="/">Log-In</Link>
         </div>
         <div id='userCreated'></div>
     </>

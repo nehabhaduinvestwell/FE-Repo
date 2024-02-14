@@ -22,10 +22,11 @@ function Login() {
     event.preventDefault();
     const data= {email, password};
     console.log(data);
-    const response= await axios.post('http://localhost:8001/login',data);;
-    console.log(response);
+    const response= await axios.post('http://localhost:8001/api/login', data, {withCredentials:true});
+    console.log(response.data);
 
     if(response.data.success) {
+      console.log("testing----------");
       navigate("/home",{state : {props:response.data.loginServiceOutput[0].name}});
     }
     else if(response.data.message === 'Type correct password'){
